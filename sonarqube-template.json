@@ -639,10 +639,10 @@
       "name": "SONAR_CONTAINER_BRANCH",
       "displayName": "SonarQube Container Branch",
       "description": "Branch from which to build the SonarQube container (https://github.com/rht-labs/openshift-sonarqube)",
-      "value": "include-postgresql"
+      "value": "master"
     },
     {
-      "name": "MEMORY_LIMIT",
+      "name": "PSQL_MEMORY_LIMIT",
       "displayName": "Memory Limit",
       "description": "Maximum amount of memory for the PostgreSQL database",
       "value": "512Mi",
@@ -685,7 +685,7 @@
       "required": true
     },
     {
-      "name": "VOLUME_CAPACITY",
+      "name": "PSQL_VOLUME_CAPACITY",
       "displayName": "Volume Capacity",
       "description": "Volume space available for data, e.g. 512Mi, 2Gi.",
       "value": "5Gi",
